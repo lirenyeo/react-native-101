@@ -3,4 +3,4 @@ import AddTaskScreen from './AddTaskScreen';
 import SettingScreen from './SettingScreen';
 import SettingDonateScreen from './SettingDonateScreen';
 
-export {TaskListScreen, AddTaskScreen, SettingScreen, SettingDonateScreen};
+export { TaskListScreen, AddTaskScreen, SettingScreen, SettingDonateScreen };

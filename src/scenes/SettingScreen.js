@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, StyleSheet, ScrollView} from 'react-native';
-import {Button, Text} from 'react-native-elements';
+import { View, StyleSheet, ScrollView } from 'react-native';
+import { Button } from 'react-native-elements';
 
-export default function SettingScreen({navigation}) {
+export default function SettingScreen({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.scrollview}>
       <View style={styles.container}>

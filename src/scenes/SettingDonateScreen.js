@@ -1,5 +1,5 @@
 import React from 'react';
-import {PricingCard} from 'react-native-elements';
+import { PricingCard } from 'react-native-elements';
 
 export default function SettingDonateScreen() {
   return (
@@ -8,7 +8,7 @@ export default function SettingDonateScreen() {
       title="Free"
       price="$0"
       info={['1 User', 'Basic Support', 'All Core Features']}
-      button={{title: 'GET STARTED', icon: 'flight-takeoff'}}
+      button={{ title: 'GET STARTED', icon: 'flight-takeoff' }}
     />
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, StyleSheet, ScrollView} from 'react-native';
-import {ListItem, Text} from 'react-native-elements';
+import { View, StyleSheet, ScrollView } from 'react-native';
+import { ListItem, Text } from 'react-native-elements';
 
 const todoTasks = [
   {
@@ -40,7 +40,7 @@ export default function TaskListScreen() {
           <ListItem
             key={i}
             title={item.title}
-            leftIcon={{name: item.icon}}
+            leftIcon={{ name: item.icon }}
             bottomDivider
           />
         ))}
@@ -51,7 +51,7 @@ export default function TaskListScreen() {
           <ListItem
             key={i}
             title={item.title}
-            leftIcon={{name: item.icon}}
+            leftIcon={{ name: item.icon }}
             bottomDivider
           />
         ))}

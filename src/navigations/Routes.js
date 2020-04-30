@@ -1,8 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {
@@ -23,7 +23,7 @@ function TodoStackScreens() {
       <TodoStack.Screen
         name="TaskList"
         component={TaskListScreen}
-        options={{title: 'Todo Tasks'}}
+        options={{ title: 'Todo Tasks' }}
       />
       <TodoStack.Screen name="AddTask" component={AddTaskScreen} />
     </TodoStack.Navigator>
@@ -42,7 +42,7 @@ function SettingStackScreens() {
   );
 }
 
-const generateIcon = iconName => ({focused, color, size}) => {
+const generateIcon = iconName => ({ focused, color, size }) => {
   return <Icon name={iconName} size={size} color={color} />;
 };
 

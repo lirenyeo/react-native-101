@@ -6,8 +6,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {
-  TaskListScreen,
-  AddTaskScreen,
+  NoteListScreen,
+  AddNoteScreen,
   SettingScreen,
   SettingDonateScreen,
 } from '../scenes';
@@ -19,13 +19,13 @@ const SettingStack = createStackNavigator();
 
 function TodoStackScreens() {
   return (
-    <TodoStack.Navigator initialRoute="TaskList">
+    <TodoStack.Navigator initialRoute="NoteList">
       <TodoStack.Screen
-        name="TaskList"
-        component={TaskListScreen}
-        options={{ title: 'Todo Tasks' }}
+        name="NoteList"
+        component={NoteListScreen}
+        options={{ title: 'My Notes' }}
       />
-      <TodoStack.Screen name="AddTask" component={AddTaskScreen} />
+      <TodoStack.Screen name="AddNote" component={AddNoteScreen} />
     </TodoStack.Navigator>
   );
 }
@@ -51,7 +51,7 @@ export default function Routes() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen
-          name="Todo Tasks"
+          name="Notes"
           component={TodoStackScreens}
           options={{
             tabBarIcon: generateIcon('list'),

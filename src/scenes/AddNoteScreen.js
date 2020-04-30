@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function AddTaskScreen() {
+export default function AddNoteScreen() {
   return (
     <View style={styles.container}>
-      <Text>AddTaskScreen</Text>
+      <Text>AddNoteScreen</Text>
     </View>
   );
 }

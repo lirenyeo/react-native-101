@@ -1,6 +1,5 @@
 // actions
 const ADD_NOTE = 'ADD_NOTE';
-const PURGE = 'PURGE';
 
 const initialState = [];
 
@@ -19,9 +18,6 @@ export default function reducer(state = initialState, action = {}) {
         },
       ];
 
-    case PURGE:
-      return initialState;
-
     default:
       return state;
   }
@@ -30,8 +26,4 @@ export default function reducer(state = initialState, action = {}) {
 // Action Creators
 export function addNote(note) {
   return { type: ADD_NOTE, note };
-}
-
-export function clearNotes() {
-  return { type: PURGE };
 }

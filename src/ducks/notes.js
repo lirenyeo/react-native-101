@@ -1,22 +1,8 @@
 // actions
 const ADD_NOTE = 'ADD_NOTE';
+const PURGE = 'PURGE';
 
-const initialState = [
-  {
-    id: 1111,
-    title: 'Hello React Native',
-    text:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt suscipit est harum incidunt illo delectus quibusdam dolor! Quam, enim voluptatem.',
-    icon: 'av-timer',
-  },
-  {
-    id: 2222,
-    title: 'Covid19 MCO',
-    text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, vitae.',
-    icon: 'flight-takeoff',
-  },
-];
+const initialState = [];
 
 // Reducer
 export default function reducer(state = initialState, action = {}) {
@@ -33,6 +19,9 @@ export default function reducer(state = initialState, action = {}) {
         },
       ];
 
+    case PURGE:
+      return initialState;
+
     default:
       return state;
   }
@@ -41,4 +30,8 @@ export default function reducer(state = initialState, action = {}) {
 // Action Creators
 export function addNote(note) {
   return { type: ADD_NOTE, note };
+}
+
+export function clearNotes() {
+  return { type: PURGE };
 }

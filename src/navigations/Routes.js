@@ -25,7 +25,11 @@ function TodoStackScreens() {
         component={NoteListScreen}
         options={{ title: 'My Notes' }}
       />
-      <TodoStack.Screen name="AddNote" component={AddNoteScreen} />
+      <TodoStack.Screen
+        name="AddNote"
+        component={AddNoteScreen}
+        options={{ title: 'Add New Note' }}
+      />
     </TodoStack.Navigator>
   );
 }

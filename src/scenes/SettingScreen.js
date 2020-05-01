@@ -1,16 +1,19 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { Button } from 'react-native-elements';
+import { useDispatch } from 'react-redux';
+import { clearNotes } from '../ducks/notes';
 
 export default function SettingScreen({ navigation }) {
+  const dispatch = useDispatch();
   return (
     <ScrollView contentContainerStyle={styles.scrollview}>
       <View style={styles.container}>
         <Button
           onPress={() => {
-            navigation.navigate('SettingDonate');
+            dispatch(clearNotes());
           }}
-          title="Buy me a coffee"
+          title="Clear All Notes"
           icon={{
             name: 'local-cafe',
             size: 15,
